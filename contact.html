@@ -1,44 +1,35 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | BuildSmart Kenya</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Contact | Jengafiti</title>
 </head>
 <body>
 
-<header>
-  <h1>Contact Us</h1>
-</header>
+<h1>Contact Us</h1>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
-<main>
-  <form name="contact" method="POST" data-netlify="true">
-    <label>Name<br>
-      <input type="text" name="name" required>
-    </label><br><br>
+  <p>
+    <label>Name:<br>
+    <input type="text" name="name" required></label>
+  </p>
 
-    <label>Email<br>
-      <input type="email" name="email" required>
-    </label><br><br>
+  <p>
+    <label>Email:<br>
+    <input type="email" name="email" required></label>
+  </p>
 
-    <label>Message<br>
-      <textarea name="message"></textarea>
-    </label><br><br>
+  <p>
+    <label>Message:<br>
+    <textarea name="message"></textarea></label>
+  </p>
 
-    <button type="submit">Send</button>
-  </form>
-</main>
+  <button type="submit">Send</button>
+</form>
 
-<footer>
-  <p>© 2026 BuildSmart Kenya</p>
-</footer>
+<a href="/">← Back to Home</a>
 
 </body>
 </html>
